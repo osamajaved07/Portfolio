@@ -5,8 +5,12 @@ import AboutMeText from "./AboutMeText";
 const AboutMeMain = () => {
   return (
     <div className="flex md:flex-row sm:flex-col gap-12 px-4 mx-w-[1200px] mx-auto mt-[100px] justify-between items-center">
-      <AboutMeImage />
-      <AboutMeText />
+      <div>
+        <AboutMeText />
+      </div>
+      <div>
+        <AboutMeImage />
+      </div>
     </div>
   );
 };
