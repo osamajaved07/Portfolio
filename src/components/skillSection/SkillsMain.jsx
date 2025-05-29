@@ -1,18 +1,21 @@
 import React from "react";
 import SkillsText from "./SkillsText";
 import AllSkills from "./AllSkills";
+import AllSkillsSM from "./AllSkillsSM";
 
 const SkillsMain = () => {
   return (
     <div id="skills">
-      <div className="mx-w-[1200px] px-4 mx-auto min-h-[600px] relative overflow-hidden">
+      <div  className="max-w-[1200px] px-4 mx-auto min-h-[600px] relative overflow-hidden">
         <SkillsText />
-        <div className="bottom-[50px] absolute left-[50%] -translate-x-[50%]">
+
+        <div className="bottom-[50px] absolute left-[50%] -translate-x-[50%] sm:hidden lg:block">
           <AllSkills />
         </div>
-        <div className="bottom-[50px] absolute left-[50px] ">
-            <AllSkills/>
+        <div className="sm:block lg:hidden">
+          <AllSkillsSM />
         </div>
+
       </div>
     </div>
   );

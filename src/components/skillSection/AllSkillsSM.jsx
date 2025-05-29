@@ -53,8 +53,8 @@ const AllSkillsSM = () => {
         return (
           <div key={index} className="flex flex-col items-center">
             <item.icon className="text-7xl text-orange" />
-            <p className="text-center mt-4"> {item.skill}</p>
-          </div>
+            <p className="text-center mt-4 text-white"> {item.skill}</p>
+          </div> 
         );
       })}
     </div>
