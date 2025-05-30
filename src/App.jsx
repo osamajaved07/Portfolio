@@ -6,6 +6,7 @@ import AboutMeMain from "./components/aboutMeSection/AboutMeMain";
 import HelperSection from "./components/HelperSection";
 import SkillsMain from "./components/skillSection/SkillsMain";
 import SubSkills from "./components/skillSection/SubSkills";
+import ExperienceMain from "./components/experienceSection/ExperienceMain";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       <SubHeroSection />
       <AboutMeMain />
       <SkillsMain />
-      <SubSkills/>
+      <SubSkills />
+      <ExperienceMain />
       <HelperSection />
     </main>
   );
