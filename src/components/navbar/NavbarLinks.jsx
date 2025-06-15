@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-scroll";
 
 const links = [
   { link: "About Me", section: "about" },
@@ -14,9 +14,9 @@ const NavbarLinks = () => {
       {links.map((link, index) => {
         return (
           <li key={index} className="group">
-            <a className="cursor-pointer text-white hover:text-cyan transition-all duration-500" href="#">
+            <Link spy={true} smooth={true} duration={500} offset={-130} to={link.section} className="cursor-pointer text-white hover:text-cyan transition-all duration-500">
               {link.link}
-            </a>
+            </Link>
             <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
           </li>
         );
