@@ -9,7 +9,7 @@ const HeroPic = () => {
       <img src="/images/HexaPic.png" alt="Osama Javed" className="max-h-[450px] w-auto  " />
 
       <div className=" absolute -z-10 flex justify-center items-center animate-pulse ">
-        <PiHexagonThin className=" md:h-[90%] sm:h-[120%] min-h-[600px] w-auto text-cyan blur-md animate-[spin_20s_linear_infinite] " />
+        <PiHexagonThin className=" mt-36 md:h-[90%] sm:h-[120%] min-h-[600px] w-auto text-darkCyan blur-md animate-[spin_20s_linear_infinite] " />
       </div>
     </motion.div>
   );
